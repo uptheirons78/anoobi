@@ -25,11 +25,6 @@
                         <?php the_content(); ?>
                         
                         <p>
-                            Skills:
-                            <?php the_terms( $post->ID, 'skills' ); ?>
-                        </p>
-                        
-                        <p>
                             <a class="button" href="<?php the_field( 'url' ); ?>">
                                 <?php esc_html_e( 'Visit the Website', 'anoobi' ); ?>
                             </a>
@@ -45,4 +40,4 @@
     
     </div>
     
-<?php get_footer(); ?>
+<?php get_footer( 'splash' ); ?>
